@@ -3,6 +3,7 @@
 <title>Photography | Mark Menesses</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="carousel.css" />
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/cooper-hewitt" type="text/css"/>
@@ -35,45 +36,59 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "cooper-hewitt", sans-serif}
 
 <!-- Header -->
 <header class="w3-container w3-center" style="padding:32px 16px 32px 16px">
-
 </header>
 
+
+
+
 <!-- First First Grid -->
-<div class="w3-padding-24 w3-container">
-  <div class="w3-content">
-    <div class="w3-col">
-      <img src="combinatorial_droplets.jpg" style="width:100%; height:auto" />
-      <p class="w3-text-grey w3-center">An array of droplets each unique in color prepared by a novel, high-throughput liquid handling method.</p>
-    </div>
-  </div>
-</div>
-
-<!-- First Grid -->
-<div class="w3-light-grey w3-padding-24 w3-container">
-  <div class="w3-content">
-    <div class="w3-col">
-      <img src="bernard_marangoni_glass_IPA_slurry.JPG" style="width:100%; height:auto" />
-      <p class="w3-text-grey w3-center">Bernard-Marangoni convection cells appear in a slurry of glass particles and isopropyl alcohol.</p>
-    </div>
-  </div>
-</div>
-
-<!-- Second Grid -->
 <div class="w3-padding-64 w3-container">
   <div class="w3-content">
-    <div class="w3-col">
-      <img src="aging_tracked_soap_bubbles_v2_200pct.png" style="width:100%; height:auto" />
-      <p class="w3-text-grey w3-center">As a soap bubble ages, the thin film displays a dazzling array of colors due to white light interference. Each image is taken sequentially 100 ms apart from top to bottom, left to right.</p>
-    </div>
-  </div>
-</div>
-
-<!-- Third Grid -->
-<div class="w3-light-grey w3-padding-64 w3-container">
-  <div class="w3-content">
-    <div class="w3-col">
-      <img src="McRae_Menesses-3.jpg" style="width:100%; height:auto" />
-      <p class="w3-text-grey w3-center">Air blown into a silicone oil bath results in the regular, periodic jetting and pinch-off of droplets.</p>
+    <div class="w3-col carousel my-carousel carousel--translate">
+      <input class="carousel__activator" type="radio" name="carousel" id="A" checked="checked"/>
+      <input class="carousel__activator" type="radio" name="carousel" id="B"/>
+      <input class="carousel__activator" type="radio" name="carousel" id="C"/>
+      <input class="carousel__activator" type="radio" name="carousel" id="D"/>
+      <div class="carousel__controls">
+        <label class="carousel__control carousel__control--backward" for="D"></label>
+        <label class="carousel__control carousel__control--forward" for="B"></label>
+      </div>
+      <div class="carousel__controls">
+        <label class="carousel__control carousel__control--backward" for="A"></label>
+        <label class="carousel__control carousel__control--forward" for="C"></label>
+      </div>
+      <div class="carousel__controls">
+        <label class="carousel__control carousel__control--backward" for="B"></label>
+        <label class="carousel__control carousel__control--forward" for="D"></label>
+      </div>
+      <div class="carousel__controls">
+        <label class="carousel__control carousel__control--backward" for="C"></label>
+        <label class="carousel__control carousel__control--forward" for="A"></label>
+      </div>
+      <div class="carousel__track">
+        <li class="carousel__slide">
+          <img src="combinatorial_droplets.jpg" style="width:100%; height:auto" />
+          <p class="w3-text-grey w3-center">An array of droplets each unique in color prepared by a novel, high-throughput liquid handling method.</p>
+        </li>
+        <li class="carousel__slide">
+          <img src="bernard_marangoni_glass_IPA_slurry.JPG" style="width:100%; height:auto" />
+          <p class="w3-text-grey w3-center">Bernard-Marangoni convection cells appear in a slurry of glass particles and isopropyl alcohol.</p>
+        </li>
+        <li class="carousel__slide">
+          <img src="aging_tracked_soap_bubbles_v2_200pct.png" style="width:100%; height:auto" />
+          <p class="w3-text-grey w3-center">As a soap bubble ages, the thin film displays a dazzling array of colors due to white light interference. Each image is taken sequentially 100 ms apart from top to bottom, left to right.</p>
+        </li>
+        <li class="carousel__slide">
+          <img src="McRae_Menesses-3.jpg" style="width:100%; height:auto" />
+          <p class="w3-text-grey w3-center">Air blown into a silicone oil bath results in the regular, periodic jetting and pinch-off of droplets.</p>
+        </li>
+      </div>
+      <div class="carousel__indicators">
+        <label class="carousel__indicator" for="A"></label>
+        <label class="carousel__indicator" for="B"></label>
+        <label class="carousel__indicator" for="C"></label>
+        <label class="carousel__indicator" for="C"></label>
+      </div>
     </div>
   </div>
 </div>
